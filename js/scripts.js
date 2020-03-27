@@ -37,14 +37,18 @@ $(document).ready(function() {
     
     if ($("#prefer").val() === "website") {
       $("#javascript").removeClass("hidden");
-      $("#name").show();
+      $("form#quiz").hide();
+
     } else if ($("#prefer").val() === "apple") {
       $("#swift").removeClass("hidden");
-      $("#name").show();
+      $("form#quiz").hide();
+
     } else {
       $("#python").removeClass("hidden");
+      $("form#quiz").hide();
     }
 
+    
 
 
   
