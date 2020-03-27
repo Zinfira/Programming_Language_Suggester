@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("form#first").click(function(event) {
+  $("form#first").submit(function(event) {
     event.preventDefault();
     var choice = $("select#choice").val();
     if (choice === 'yes') {
@@ -8,7 +8,7 @@ $(document).ready(function() {
       } else {
       $("#nointerest").show();
       $("#first").hide();
-      return;
+    
     }
     
     

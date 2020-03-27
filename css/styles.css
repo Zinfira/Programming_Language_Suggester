@@ -73,13 +73,19 @@ h1 {
 
 p {
   color: #1c5f8b;
+  margin: 10px;
 }
 
 h3 { 
   color: #185680;
+  margin: 10px;
 }
 
 h2 { 
   color: #185680;
+  margin: 10px;
 }
 
+.radio {
+  background-color: rgb(228, 232, 238);
+}
