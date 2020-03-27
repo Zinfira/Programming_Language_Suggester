@@ -3,8 +3,12 @@ $(document).ready(function() {
     var choice = $("select#choice").val();
     if (choice === 'yes') {
       $("#interest").show();
+      $("#main").hide();
+      //$(".jumbotron").hide();
+
     } else  {
       $("#nointerest").show();
+      $("#main").hide();
     }
 
     event.preventDefault();
