@@ -13,9 +13,9 @@
         <h1>Programming Language Suggester</h1>
       
         <form id="main">
-          <h2>We happy to see you on our page. If you would like to start to code but you do not know which programming languages is better for you, we can help you to found out.</h2>
+          <h2>We happy to see you on our page. If you would like to start to code but you do not know which programming languages is better for you, we can try to give you suggestion.</h2>
           <p>Before we start, I have the main question to you:</p>
-          <label for="choice"><strong>Are you interested in coding?</strong></label>
+          <label for="choice">Are you interested in coding?</label>
           <select id="choice">
             <option value="yes">Yes</option>
             <option value="no">No</option>
@@ -27,7 +27,7 @@
           <form>
             <form id="quiz">
               <h3>We here to help you! </h3>
-              <p>Give the answer on our questions below:</p>
+              <p>Let's start our test. Give the answers on our questions below:</p>
               <label for="name">Enter your name</label>
               <input id="name" type="text">
               <label for="age">Enter you age</label>
@@ -36,6 +36,60 @@
                 <option value="female">Female</option>
                 <option value="male">Male</option>
               </select>
+
+              
+              <div class="row">
+                <div class="col-md-4">
+                  <p>What would you like to do?</p>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="todo" value="website" checked>
+                      You'd like to create websites, make up pages.
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="todo" value="Apple">
+                      You like Apple Products, and you'd like to program for iOS.
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="todo" value="dev">
+                      You would like to on Web-Development
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <p>What is you purpose?</p>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="purpose" value="money" checked>
+                      For Making money
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="purpose" value="self">
+                      For self-development
+                    </label>
+                  </div>
+                  
+                </div>
+
+              
+
+
+
+
+
+
+
+
+
+              </div>
+
               
             </form>
           </form>
