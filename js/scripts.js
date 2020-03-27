@@ -4,14 +4,13 @@ $(document).ready(function() {
     if (choice === 'yes') {
       $("#interest").show();
       $("#main").hide();
-      //$(".jumbotron").hide();
-
-    } else  {
+      } else {
       $("#nointerest").show();
       $("#main").hide();
     }
 
     event.preventDefault();
+    return;
   });
 
   $("form#quiz").submit(function(event) {
@@ -19,8 +18,10 @@ $(document).ready(function() {
     var name = $("input#name").val();
     var age = parseInt($("input#age").val());
     var gender = $("select#gender").val();
+    var day = $("input:radio[name=day]:checked").val();
     var todo = $("input:radio[name=todo]:checked").val();
     var purpose = $("input:radio[name=purpose]:checked").val();
-    console.log(name, age, gender,todo, purpose)
+
+    console.log(name, age, gender, day, todo, purpose)
   });
 });
