@@ -11,13 +11,40 @@
     <div class="container">
       <div class="jumbotron">
         <h1>Programming Language Suggester</h1>
-        <p>Are you interested in coding? But you can not decide which languages you should start to <strong>learn first?</strong> Our Programming Language Suggester will help you.</p>
-        <form>
-          <form id="quiz">
-            <p>Give the answer on our questions below:</p>
-            
-          </form>
+      </div>
+        <form id="main">
+          <label for="choice">Are you interested in coding?</label>
+          <select id="choice">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+          <button type="submit" class="choice-btn">Submite your answer</button>
         </form>
+        <div id="interest">
+          <form>
+            <form id="quiz">
+              <p>Give the answer on our questions below:</p>
+              <label for="name">Enter your name</label>
+              <input id="name" type="text">
+              <label for="age">Enter you age</label>
+              <input id="age" type="text">
+              <select id="gender">
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+              </select>
+              
+            </form>
+          </form>
+        </div>
+
+
+        <div id="nointerest">
+          <h4>Thank you for visiting our page but we can not help you. See you next time, if you will change your mind. Have a good day!</h6>
+        </div>
+
+
+
+        
       </div>
 
 
