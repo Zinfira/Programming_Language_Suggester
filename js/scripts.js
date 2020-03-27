@@ -1,5 +1,6 @@
 $(document).ready(function() {
   $("form#main").submit(function(event) {
+    event.preventDefault();
     var choice = $("select#choice").val();
     if (choice === 'yes') {
       $("#interest").show();
@@ -7,10 +8,10 @@ $(document).ready(function() {
       } else {
       $("#nointerest").show();
       $("#main").hide();
+      return;
     }
-
-    event.preventDefault();
-    return;
+    
+    
   });
 
   $("form#quiz").submit(function(event) {
@@ -21,7 +22,17 @@ $(document).ready(function() {
     var day = $("input:radio[name=day]:checked").val();
     var todo = $("input:radio[name=todo]:checked").val();
     var purpose = $("input:radio[name=purpose]:checked").val();
+    if (age <= 7){
+      alert("You must be over 7 years old")
+      return;
+    }
+
+
 
     console.log(name, age, gender, day, todo, purpose)
+
+    
+    
   });
+  
 });
