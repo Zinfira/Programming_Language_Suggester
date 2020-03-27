@@ -18,3 +18,24 @@
 .hidden {
   display: show;
 }
+
+.img {
+  float: left;
+  margin: 10px;
+  margin-top: 100px;
+  margin-left: 10px;
+}
+
+.btn-submit {
+  margin: 20 px;
+  margin-bottom: 20px;
+}
+
+.sidebar {
+  width: 30%;
+  float: right;
+  text-align: justify;
+  color:#1c5f8b;
+  margin: 10px;
+  margin-right: 10pt plus 5pt minus 5 pt;
+}

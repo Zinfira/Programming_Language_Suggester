@@ -1,13 +1,13 @@
 $(document).ready(function() {
-  $("form#main").submit(function(event) {
+  $("form#first").click(function(event) {
     event.preventDefault();
     var choice = $("select#choice").val();
     if (choice === 'yes') {
       $("#interest").show();
-      $("#main").hide();
+      $("#first").hide();
       } else {
       $("#nointerest").show();
-      $("#main").hide();
+      $("#first").hide();
       return;
     }
     
@@ -20,10 +20,10 @@ $(document).ready(function() {
     var age = parseInt($("input#age").val());
     var gender = $("select#gender").val();
     var day = $("input:radio[name=day]:checked").val();
-    var todo = $("input:radio[name=todo]:checked").val();
+    // var todo = $("input:radio[name=todo]:checked").val();
     var purpose = $("input:radio[name=purpose]:checked").val();
 
-    console.log(name, age, gender, day, todo, purpose)
+    console.log(name, age, gender, day, purpose)
     //if (age <= 7){
       //alert("You must be over 7 years old")
       //return;
@@ -34,8 +34,8 @@ $(document).ready(function() {
     $("#swift").removeClass("hidden");
   } else {
     $("#python").removeClass("hidden");
-    
   }
+  
 
     
     
