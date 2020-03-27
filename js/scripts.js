@@ -34,8 +34,7 @@ $(document).ready(function() {
       
 
     console.log(name, age, gender, day, purpose)
-    
-    
+        
     if ($("#prefer").val() === "website") {
       $("#javascript").removeClass("hidden");
       $("form#quiz").hide();
@@ -50,9 +49,5 @@ $(document).ready(function() {
     }
 
     $("#output-div").replaceWith(`<h3 id="output-div"> Thank you ${name} for taking our test! Good luck!</h3>`)
-    
-    
-    
-  });
-  
+  }); 
 });

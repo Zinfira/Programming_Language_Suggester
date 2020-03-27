@@ -29,8 +29,13 @@
 .btn-submit {
   margin: 20 px;
   margin-bottom: 20px;
+  border-color: bisque;
 }
 
+.choice-btn {
+  margin-top: 10px;
+  border-color: #182329;
+}
 .sidebar {
   width: 30%;
   float: right;
@@ -48,3 +53,33 @@
 .clickable:hover {
   text-decoration: underline;
 }
+
+body {
+  background-color: rgb(219, 223, 223);
+}
+
+.jumbotron {
+  background-color: rgb(243, 237, 227);
+}
+
+h1 {
+  font-style: sans-serif;
+  color: #41535e;
+}
+
+#quiz {
+  background-color: rgb(243, 237, 227);
+}
+
+p {
+  color: #1c5f8b;
+}
+
+h3 { 
+  color: #185680;
+}
+
+h2 { 
+  color: #185680;
+}
+
