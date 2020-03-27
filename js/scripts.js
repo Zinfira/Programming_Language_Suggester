@@ -12,13 +12,15 @@ $(document).ready(function() {
     }
 
     event.preventDefault();
-    
+  });
+
+  $("form#quiz").submit(function(event) {
+    event.preventDefault()
+    var name = $("input#name").val();
+    var age = parseInt($("input#age").val());
+    var gender = $("select#gender").val();
+    var todo = $("input:radio[name=todo]:checked").val();
+    var purpose = $("input:radio[name=purpose]:checked").val();
+    console.log(name, age, gender,todo, purpose)
   });
 });
-
-
-  //$("form#quiz").submit(function(event) {
-    //event.preventDefault()
-    //var name = $("input#name").val();
-    //var age = parseInt($("input#age").val());
-   // var gender = $("select#gender").val();
