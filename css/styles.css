@@ -16,7 +16,7 @@
 }
 
 .hidden {
-  display: show;
+  display: none;
 }
 
 .img {
@@ -38,4 +38,13 @@
   color:#1c5f8b;
   margin: 10px;
   margin-right: 10pt plus 5pt minus 5 pt;
+}
+
+.clickable {
+  cursor: pointer;
+  color: #182329;
+}
+
+.clickable:hover {
+  text-decoration: underline;
 }
