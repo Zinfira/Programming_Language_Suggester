@@ -22,14 +22,22 @@ $(document).ready(function() {
     var day = $("input:radio[name=day]:checked").val();
     var todo = $("input:radio[name=todo]:checked").val();
     var purpose = $("input:radio[name=purpose]:checked").val();
-    if (age <= 7){
-      alert("You must be over 7 years old")
-      return;
-    };
-    if ($("input:radio[name=todo]:checked").val() === "#web") {
-      $('#javascript').removeClass("hidden");
-    }
+
     console.log(name, age, gender, day, todo, purpose)
+    //if (age <= 7){
+      //alert("You must be over 7 years old")
+      //return;
+    //}
+    if ($("#prefer").val() === "website") {
+    $("#javascript").removeClass("hidden");
+  } else if ($("#prefer").val() === "apple") {
+    $("#swift").removeClass("hidden");
+  } else {
+    $("#python").removeClass("hidden");
+    
+  }
+
+    
     
 
 
